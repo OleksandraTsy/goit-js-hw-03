@@ -1,7 +1,7 @@
 function filterArray(numbers, value) {
 
     // Створи порожній масив, у який будеш додавати підходящі числа.
-    const array = [];
+    const resultArray = [];
 
     // Використай цикл для ітерації кожного елемента масиву numbers.
     for (let i = 0; i < numbers.length; i += 1){
@@ -9,12 +9,12 @@ function filterArray(numbers, value) {
 
         // Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
         if (number > value) {
-        array.push(i);
+        resultArray.push(number);
         }
     }
 
 // Поверни свій новий масив з підходящими числами як результат.
-return array;
+return resultArray;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
